@@ -1,0 +1,27 @@
+$border-color: black; 
+$hover-background-color: black;
+$link-color: black;
+$hover-link-color: white;
+$background-color: white;
+$link-padding: 8px 12px;
+$link-margin: 5px;
+$border-radius: 5px;
+
+.social-links {
+    a {
+        display: inline-block;
+        border: 1px solid $border-color;
+        padding: $link-padding;
+        margin: $link-margin;
+        text-decoration: none;
+        color: $link-color;
+        border-radius: $border-radius;
+        background-color: $background-color;
+        transition: background-color 0.3s, color 0.3s;
+        
+        &:hover {
+            background-color: $hover-background-color;
+            color: $hover-link-color;
+          }
+    }
+}
